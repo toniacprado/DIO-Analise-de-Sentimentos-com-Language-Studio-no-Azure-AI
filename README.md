@@ -1,7 +1,7 @@
 <h1>
     <a href="https://www.dio.me/">
      <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
-    <span> Trabalhando com Machine Learning na Prática no Azure ML </span>
+    <span> Trabalhando com Análise de Sentimentos com Language Studio no Azure AI </span>
 </h1>
 
 Repositório desenvolvido para fins didáticos. 
@@ -70,11 +70,86 @@ A Microsoft disponibiliza um bom conteúdo de exemplos no GitHub de como utiliza
 https://github.com/Azure-Samples/cognitive-services-speech-sdk
 
 
+### IA do Azure Language Studio
+
+#### É preciso criar um recurso do Language Service
+
+1o. Acessar o Portal do Azure e criar um recurso do tipo Language Service
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/3484727d-e1a9-4ff2-93e0-f237f42185e4)
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/6b9a3124-b92c-46fa-9fb8-ef45b087daf2)
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/de113417-6bf5-4d4b-8bb9-7b3648dd1448)
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/e4ea648a-403b-4999-9612-1b0c83521803)
+
+Depois do deploy complete acessar direto a página:
+
+https://language.cognitive.azure.com/
+
+E selecionar o recurso recem criado dentro do Portal do Azure:
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/b61ba5aa-e2df-4662-add5-05b5f408883f)
+
+
+### Vamos criar um projeto para Classificar texto e opiniões / sentimento:
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/9ad44c66-e1cb-4d3d-862a-dfbc758ae361)
+
+
+O texto usado para o exemplo foi retirado da documentação oficial de apoio deste lab : 
+
+https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/06-text-analysis.html
+
+"
+ Tired hotel with poor service
+ 
+ The Royal Hotel, London, United Kingdom
+ 
+ 5/6/2018
+ 
+ This is an old hotel (has been around since 1950's) and the room furnishings are average - becoming a bit old now and require changing. The internet didn't work and had to come to one of their office rooms to check in for my flight home. The website says it's close to the British Museum, but it's too far to walk.
+"
+
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/55a296e8-1079-49ec-9602-848e82603bb5)
+
+
+##### Análise dos resultados:
+Interessante observar como a ferramenta foi capaz de perceber o tom de desagrado do comentário do texto:
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/d8072596-ac26-4092-ab86-4c5269bd1602)
+
+E na explicação realça como chegou nas conclusões de sentimento:
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/0d7a3356-92b7-426a-a6f5-a7280daabb4d)
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/3078888b-e334-4160-ade1-886f511aa4f4)
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/641bb683-b522-4d83-b597-5700f535e499)
+
+![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/9908b9a2-34b7-415f-a8de-3337f6043bc0)
+
+
+O portal já tras exemplos de como utilizar em aplicação com a documentação no gihub:  
+
+https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/textanalytics/azure-ai-textanalytics/samples
+
+E também explica os preços e as boas práticas de IA responsável.
+
+### Considerações Finais
+O laboratório foi muito instrutivo para apresentar as funcionalidade de fala e análise de texto, apesar de serem recursos visivelmente avançados o uso da ferramenta foi amigável e com ampla documentação de apoio para aplicar em projetos práticos!
+
+Toni A C Prado
+
 
 ----
-Foi usado como base as aulas do Bootcamp e as instruções do link:
+Foi usado como base as aulas do Bootcamp e as instruções dos links:
 
 https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/09-speech.html
+
+https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/06-text-analysis.html
 
 O audio usado foi o fornecido no link:  https://aka.ms/mslearn-speech-files to download speech.zip
 
