@@ -132,7 +132,7 @@ E na explicação realça como chegou nas conclusões de sentimento:
 ![image](https://github.com/toniacprado/DIO-Analise-de-Sentimentos-com-Language-Studio-no-Azure-AI/assets/105946569/9908b9a2-34b7-415f-a8de-3337f6043bc0)
 
 
-O portal já tras exemplos de como utilizar em aplicação com a documentação no gihub:  
+O portal fornece exemplos de como utilizar os recursos em aplicação com a documentação no gihub:  
 
 https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/textanalytics/azure-ai-textanalytics/samples
 
